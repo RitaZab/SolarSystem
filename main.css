@@ -1,0 +1,82 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-image: url("planetsimages/bgimage.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sun{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    }
+
+#sun {width:75px}
+
+.mercury{position: absolute;
+    top: 44%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    animation: orbit1 8s linear infinite;
+    width: 10px}
+    
+
+
+@keyframes orbit1{
+    from {transform: rotate(0deg)translateX(50px);rotate: (0deg);}
+    to{transform: rotate(360deg)translateX(50px)rotate(-360deg);}
+}
+.orbit{
+    border-radius: 50%;
+    border:1px dotted red;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);}
+
+.morbit{    height:130px;
+    width: 130px;
+}
+
+.venus {
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 24s linear infinite;
+    width: 20px
+}
+@keyframes orbit2 {
+    from {
+        transform: rotate(0deg)translateX(70px);
+        rotate: (0deg);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(70px)rotate(-360deg);
+    }
+}
+.vorbit{height:140px;
+        width:140px}
+
+.earth {
+    position: absolute;
+    top: 44%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    animation: orbit3 36s linear infinite;
+    width: 20px
+}
+@keyframes orbit3 {
+    from {
+        transform: rotate(0deg)translateX(75px);
+        rotate: (0deg);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(75px)rotate(-360deg);
+    }
+}
