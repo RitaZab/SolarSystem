@@ -5,8 +5,12 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    width:100vh;
+    height:100vh
 }
-
+.planets{
+    display:grid
+}
 .sun{
     position: absolute;
     top:50%;
@@ -14,20 +18,20 @@ body{
     transform: translate(-50%,-50%);
     }
 
-#sun {width:75px}
+#sun {width:150px}
 
 .mercury{position: absolute;
-    top: 44%;
-    left: 43%;
+    top:50%;
+    left:50%;
     transform: translate(-50%, -50%);
-    animation: orbit1 8s linear infinite;
+    animation: orbit1 6s linear infinite;
     width: 10px}
     
 
 
 @keyframes orbit1{
-    from {transform: rotate(0deg)translateX(50px);rotate: (0deg);}
-    to{transform: rotate(360deg)translateX(50px)rotate(-360deg);}
+    from {transform: rotate(0deg)translateX(10%)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(10%)rotate(-360deg);}
 }
 .orbit{
     border-radius: 50%;
@@ -46,17 +50,17 @@ body{
     top: 45%;
     left: 48%;
     transform: translate(-50%, -50%);
-    animation: orbit2 24s linear infinite;
+    animation: orbit2 23s linear infinite;
     width: 20px
 }
 @keyframes orbit2 {
     from {
-        transform: rotate(0deg)translateX(70px);
+        transform: rotate(0deg)translateX(75px);
         rotate: (0deg);
     }
 
     to {
-        transform: rotate(360deg)translateX(70px)rotate(-360deg);
+        transform: rotate(360deg)translateX(75px)rotate(-360deg);
     }
 }
 .vorbit{height:140px;
@@ -67,16 +71,93 @@ body{
     top: 44%;
     left: 43%;
     transform: translate(-50%, -50%);
-    animation: orbit3 36s linear infinite;
-    width: 20px
+    animation: orbit3 38s linear infinite;
+    width: 40px
 }
 @keyframes orbit3 {
     from {
-        transform: rotate(0deg)translateX(75px);
-        rotate: (0deg);
+        transform: rotate(0deg)translateX(90px)rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg)translateX(75px)rotate(-360deg);
+        transform: rotate(360deg)translateX(90px)rotate(-360deg);
+    }
+}
+.mars{position:absolute;
+    transform: translate(-50%, -50%);
+    width:20px;
+    top:20%;
+    left:40%;
+    animation:orbit4 71s linear infinite;
+    
+    }
+@keyframes orbit4{
+    from{transform: rotate(0deg)translateX(100px)rotate(0deg);}
+    to{transform:rotate(360deg)translateX(100px)rotate(-360deg)}
+}
+.jupiter{position: absolute;
+    transform: translate(-50%,-50%);
+    top:60%;
+    left:40%;
+    width:80px;
+    animation: orbit5 10s linear infinite;
+
+}
+
+@keyframes orbit5 {
+    from {
+        transform: rotate(0deg)translateX(150px)rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(150px)rotate(-360deg);
+    }
+}
+.saturn{position:absolute;
+    transform: translate(-50%, -50%);
+        top: 60%;
+        left: 40%;
+        width:80px;
+        animation:orbit6 10s linear infinite;
+    }
+@keyframes orbit6 {
+    from {
+        transform: rotate(0deg)translateX(200px)rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(150px)rotate(-360deg);
+    }
+}
+.uranus{position:absolute;
+    transform: translate(-50%,-50%);
+    top:30%;
+    left:30%;
+    width:60px;
+animation:orbit7 10s linear infinite;}
+
+@keyframes orbit7 {
+    from {
+        transform: rotate(0deg)translateX(250px)rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(250px)rotate(-360deg);
+    }
+}
+.neptune{position:absolute;
+    transform: translate(-50%, -50%);
+    top:25%;
+    left:25%;
+    width:60px;
+    animation: orbit7 900s linear infinite;}
+
+@keyframes orbit7 {
+    from {
+        transform: rotate(0deg)translateX(300px)rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)translateX(300px)rotate(-360deg);
     }
 }
